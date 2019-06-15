@@ -92,7 +92,7 @@ button, input, textarea:focus {
   height: 100%;   
 }
 
-#center {
+#middle {
   position: fixed;
   display: flex;
   width: 100%;
