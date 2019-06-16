@@ -29,7 +29,7 @@
   
   <div id="middle" class="animated fast slideInDown">
     <h1 id="title">David Chen</h1>
-    <h3 id="subtitle">Software engineer / Designer / Photographer</h3>
+    <h3 id="subtitle">[Description] / [Description] / [Description]</h3>
 
     <ul class="menu">
       <li class="menu-item"><a href="#">about</a></li>
@@ -44,10 +44,51 @@
     </ul>
   </div> 
   
-  <a id="about" href="#" onclick="showAbout()" class="section-link animated fadeIn">about</a>
-  <a id="contact" href="#" onclick="showContact()" class="section-link animated fadeIn">contact</a>
-  <a id="work" href="#" onclick="showWork()" class="section-link animated fadeIn">work</a>  
-  
+  <a id="about" href="#about" onclick="showAbout()" class="section-link animated fadeIn">about</a>
+  <a id="contact" href="#contact" onclick="showContact()" class="section-link animated fadeIn">contact</a>
+  <a id="work" href="#work" onclick="showWork()" class="section-link animated fadeIn">work</a>  
+
+  <div id="about-section" class="section-container">       
+    <div onclick="closeAbout()" class="close-arrow"><a href="#"><i class="fas fa-angle-left"></a></i></div>
+    <h1 class="section-title">about.</h1>            
+
+    <h3 class="section-subtitle">about me</h3>
+    <p class="section-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ducimus sapiente impedit quo. Odio dolorem odit accusamus amet cupiditate qui possimus, ab non aspernatur libero, eius dolores enim dicta? Sapiente?</p>
+    
+    <h3 class="section-subtitle">skills</h3>
+    <p class="section-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ducimus sapiente impedit quo. Odio dolorem odit accusamus amet cupiditate qui possimus, ab non aspernatur libero, eius dolores enim dicta? Sapiente?</p>
+
+    <h3 class="section-subtitle">resume</h3>
+    <p class="section-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ducimus sapiente impedit quo. Odio dolorem odit accusamus amet cupiditate qui possimus, ab non aspernatur libero, eius dolores enim dicta? Sapiente?</p>
+  </div>
+
+  <div id="contact-section" class="section-container">    
+    <div onclick="closeContact()" class="close-arrow"><a href="#"><i class="fas fa-angle-down"></i></a></div> 
+    <h1 class="section-title">contact.</h1>
+
+    <h3 class="section-subtitle">send me a message</h3>
+    <form id="contact-form" class="section-content">
+      <div class="sender-container">
+        <input type="text" placeholder="name" name="name" id="name" class="sender-info" required>
+        <input type="email" placeholder="email" name="email" id="email" class="sender-info" required>   
+      </div>       
+      
+      <textarea placeholder="your message" name="message" id="message" required rows="6"></textarea>                                  
+                       
+      <button class="btn-round" type="submit">send</button>
+      <div class="sent-alert">Your message has been sent.</div>
+    </form>
+  </div>
+
+  <div id="work-section" class="section-container">    
+    <div onclick="closeWork()" class="close-arrow"><a href="#"><i class="fas fa-angle-right"></i></a></div>        
+    <h1 class="section-title">work.</h1>
+  </div>
+  <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+  <script src="/__/firebase/6.0.4/firebase-app.js"></script>
+  <script src="/__/firebase/6.0.2/firebase-firestore.js"></script>
+  <script src="/__/firebase/init.js"></script>
+  <script src="scripts/DOMPurify.js"></script>
   <script src="scripts/particles.js"></script>
   <script src="scripts/main.js"></script>  
 </body>

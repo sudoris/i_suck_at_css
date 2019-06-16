@@ -23,7 +23,7 @@ body {
   padding: 0;  
   
   /* bg */
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
               url("https://images.unsplash.com/photo-1535898331935-2d274aff0fbc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1550&q=80");
   background-position: center;
   background-repeat: no-repeat;
@@ -223,6 +223,110 @@ button, input, textarea:focus {
   background: var(--danger);
 }
 
+.section-container {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  background: var(--danger);
+  display: none;
+  color: white;  
+  padding: 5% 15%;
+}
+
+.close-arrow a {
+  font-size: 3.8rem;
+  margin-bottom: 5rem;  
+  text-decoration: none;
+  color: white;
+}
+
+.close-arrow:hover {
+  cursor: pointer;
+}
+
+.section-title {
+  font-size: 6rem;
+  text-decoration: underline;  
+  margin-bottom: 5rem;
+}
+
+.section-subtitle {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.section-content {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.sender-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+  margin-bottom: 3rem;  
+}
+
+.sender-info {
+  border: 0px;
+  width: 48%;
+  border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+  padding: 8px 10px;
+  background: transparent;
+  color: white;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 3rem;
+}
+
+.sender-info::placeholder,
+#contact-form textarea::placeholder {
+  color: white;
+}
+
+#contact-form textarea {
+  background: transparent;
+  border: none;
+  border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+  color: white;
+  font-size: 2rem;
+  font-weight: 700;
+  width: 100%;  
+  font-family: inherit;
+  margin-bottom: 2rem;
+}
+
+#contact-form textarea::selection {
+  background-color: #fff;
+}
+
+.sent-alert {
+  display: none;
+}
+
+/* buttons */
+.btn-round {
+  font-size: 1.8rem;
+  font-family: inherit;
+  color: white;
+  background: transparent;
+  border: 3px solid white;
+  padding: 0.8rem 4rem;
+  border-radius: 8rem;
+  font-weight: 700;
+  margin: 1rem 1rem;
+  transition: 0.3s ease-in;
+  cursor: pointer;
+}
+
+.btn-round:hover {  
+  color: var(--danger);
+  background: #fff;
+}
+
 @media (max-width: 1200px) {
   .social {
     width: 45%;
@@ -244,6 +348,10 @@ button, input, textarea:focus {
     display: flex;
     width: 50%;
   }
+
+  .section-container {   
+    padding: 8% 12%;
+  }
 }
 
 @media (max-width: 800px) {
@@ -257,6 +365,18 @@ button, input, textarea:focus {
 
   #middle {
     padding: 3%;
+  }
+
+  .section-container {   
+    padding: 4%;
+  }
+
+  .section-subtitle {
+    padding: 0;
+  }
+
+  .section-content {
+    padding: 0;
   }
 }
 
