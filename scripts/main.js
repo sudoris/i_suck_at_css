@@ -78,10 +78,11 @@ setTimeout(function() {
   setTimeout(() => {
       loadingEl.classList.remove('animated', 'fadeOut')
       loadingEl.setAttribute('style', 'display: none;')
-      // document.getElementById('box').setAttribute('style', 'display: none;')
-      // document.getElementById('about').classList.remove('animated', 'fadeIn')
-      // document.getElementById('contact').classList.remove('animated', 'fadeIn')
-      // document.getElementById('work').classList.remove('animated', 'fadeIn')
+      document.getElementById('boxes').setAttribute('style', 'display: none;')
+      document.getElementById('about').classList.remove('animated', 'fadeIn')
+      document.getElementById('contact').classList.remove('animated', 'fadeIn')
+      document.getElementById('work').classList.remove('animated', 'fadeIn')
   }, 1000)    // animate css's fadeOut animation takes 1s to complete
 }, 1000);   // wait 1s to fadeOut loading 
+
 

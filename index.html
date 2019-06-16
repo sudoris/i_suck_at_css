@@ -5,27 +5,48 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="css/fontawesome.css"> -->
   <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/styles.css">
-  <title>Plog</title>
+  <title>Plog - David Chen</title>
 </head>
 <body>
-
+  <!-- loading -->
   <div id="loading-bg"> 
     <div id="loading-spinner"></div>
   </div>
-  <div id="particles-js"></div>
-
-  <div id="middle">
-    <h1 id="title">[Enter title]</h1>
-    <h3 id="subtitle">[Enter subtitle]</h3>
-    <ul class="social">      
-      <li class="social-item"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-      <li class="social-item"><a href="#"><i class="fab fa-github"></i></a></li>
-      <li class="social-item"><a href="#"><i class="fab fa-facebook-square"></i></a></li>      
-    </ul>
+  <div id="boxes">
+    <div class="box animated bounceOutLeft" style="animation-delay: 1s;"></div>
+    <div class="box animated bounceOutLeft" style="animation-delay: 1.1s;"></div>
+    <div class="box animated bounceOutLeft" style="animation-delay: 1.2s;"></div>
+    <div class="box animated bounceOutRight" style="animation-delay: 1.2s;"></div>
+    <div class="box animated bounceOutRight" style="animation-delay: 1.1s;"></div>
+    <div class="box animated bounceOutRight" style="animation-delay: 1s;"></div>
   </div>
+  <!-- end loading -->
+
+  <div id="particles-js"></div>
   
+  <div id="middle" class="animated fast slideInDown">
+    <h1 id="title">David Chen</h1>
+    <h3 id="subtitle">Software engineer / Designer / Photographer</h3>
+
+    <ul class="menu">
+      <li class="menu-item"><a href="#">about</a></li>
+      <li class="menu-item"><a href="#">contact</a></li>
+      <li class="menu-item"><a href="#">work</a></li>   
+    </ul>
+
+    <ul class="social">      
+      <li class="social-item animated zoomIn"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+      <li class="social-item animated zoomIn"><a href="#"><i class="fab fa-facebook-square"></i></a></li>   
+      <li class="social-item animated zoomIn"><a href="#"><i class="fab fa-github"></i></a></li>         
+    </ul>
+  </div> 
+  
+  <a id="about" href="#" onclick="showAbout()" class="section-link animated fadeIn">about</a>
+  <a id="contact" href="#" onclick="showContact()" class="section-link animated fadeIn">contact</a>
+  <a id="work" href="#" onclick="showWork()" class="section-link animated fadeIn">work</a>  
   
   <script src="scripts/particles.js"></script>
   <script src="scripts/main.js"></script>  
