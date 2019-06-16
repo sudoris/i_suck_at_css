@@ -17,7 +17,7 @@ function showAbout() {
 }
 
 // close about section
-function closeAbout() {    
+function closeAbout() {      
   let el = document.getElementById('about-section')
   el.classList.add('animated', 'slideOutLeft', 'faster')
   
@@ -39,7 +39,7 @@ function showContact() {
 }
 
 // close contact section
-function closeContact() {
+function closeContact() {  
   let el = document.getElementById('contact-section')
   el.classList.add('animated', 'slideOutDown', 'faster')
   
@@ -61,7 +61,7 @@ function showWork() {
 }
 
 // close work section
-function closeWork() {
+function closeWork() {  
   let el = document.getElementById('work-section')
   el.classList.add('animated', 'slideOutRight', 'faster')
   
@@ -147,6 +147,11 @@ function saveMessage({name, email, message}) {
     .catch(function(error) {
         console.error("Error sending message")
     });
+}
+
+// remove hashtag on page reload
+window.onload = function() {
+  history.pushState('', '', window.location.pathname);
 }
 
 

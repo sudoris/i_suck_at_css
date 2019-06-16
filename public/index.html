@@ -29,18 +29,18 @@
   
   <div id="middle" class="animated fast slideInDown">
     <h1 id="title">David Chen</h1>
-    <h3 id="subtitle">[Description] / [Description] / [Description]</h3>
+    <h3 id="subtitle">Hi, I am a web developer from the US currently living in Taipei</h3>
 
     <ul class="menu">
-      <li class="menu-item"><a href="#">about</a></li>
-      <li class="menu-item"><a href="#">contact</a></li>
-      <li class="menu-item"><a href="#">work</a></li>   
+      <li class="menu-item"><a href="#about" onclick="showAbout()">about</a></li>
+      <li class="menu-item"><a href="#contact" onclick="showContact()">contact</a></li>
+      <li class="menu-item"><a href="#work" onclick="showWork()">work</a></li>   
     </ul>
 
     <ul class="social">      
-      <li class="social-item animated zoomIn"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-      <li class="social-item animated zoomIn"><a href="#"><i class="fab fa-facebook-square"></i></a></li>   
-      <li class="social-item animated zoomIn"><a href="#"><i class="fab fa-github"></i></a></li>         
+      <li class="social-item animated zoomIn"><a href="https://www.linkedin.com/in/david-chen-a5a683162/"><i class="fab fa-linkedin-in"></i></a></li>
+      <li class="social-item animated zoomIn"><a href="https://www.facebook.com/david.chen.735"><i class="fab fa-facebook-square"></i></a></li>   
+      <li class="social-item animated zoomIn"><a href="https://github.com/sudoris"><i class="fab fa-github"></i></a></li>         
     </ul>
   </div> 
   
@@ -53,20 +53,20 @@
     <h1 class="section-title">about.</h1>            
 
     <h3 class="section-subtitle">about me</h3>
-    <p class="section-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ducimus sapiente impedit quo. Odio dolorem odit accusamus amet cupiditate qui possimus, ab non aspernatur libero, eius dolores enim dicta? Sapiente?</p>
+    <p class="section-content">coming soon...</p>
     
     <h3 class="section-subtitle">skills</h3>
-    <p class="section-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ducimus sapiente impedit quo. Odio dolorem odit accusamus amet cupiditate qui possimus, ab non aspernatur libero, eius dolores enim dicta? Sapiente?</p>
+    <p class="section-content">coming soon...</p>
 
     <h3 class="section-subtitle">resume</h3>
-    <p class="section-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ducimus sapiente impedit quo. Odio dolorem odit accusamus amet cupiditate qui possimus, ab non aspernatur libero, eius dolores enim dicta? Sapiente?</p>
+    <p class="section-content"><a class="resume" href="https://drive.google.com/file/d/1SX8HCN8z8K6nX8CYjkZ29PAghB30h1B7/view?usp=sharing" target="_blank"><i class="fas fa-scroll"></i></a></p>
   </div>
 
   <div id="contact-section" class="section-container">    
     <div onclick="closeContact()" class="close-arrow"><a href="#"><i class="fas fa-angle-down"></i></a></div> 
     <h1 class="section-title">contact.</h1>
 
-    <h3 class="section-subtitle">send me a message</h3>
+    <h3 class="section-subtitle">send me a message (I promise to read it)</h3>
     <form id="contact-form" class="section-content">
       <div class="sender-container">
         <input type="text" placeholder="name" name="name" id="name" class="sender-info" required>
@@ -76,14 +76,18 @@
       <textarea placeholder="your message" name="message" id="message" required rows="6"></textarea>                                  
                        
       <button class="btn-round" type="submit">send</button>
-      <div class="sent-alert">Your message has been sent.</div>
+      <div class="sent-alert">Your message has been sent.</div>      
     </form>
   </div>
 
   <div id="work-section" class="section-container">    
     <div onclick="closeWork()" class="close-arrow"><a href="#"><i class="fas fa-angle-right"></i></a></div>        
     <h1 class="section-title">work.</h1>
+
+    <h3 class="section-subtitle">One Record</h3>
+    <p class="section-content">This page is still under construction...</p>    
   </div>
+  
   <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
   <script src="/__/firebase/6.0.4/firebase-app.js"></script>
   <script src="/__/firebase/6.0.2/firebase-firestore.js"></script>
