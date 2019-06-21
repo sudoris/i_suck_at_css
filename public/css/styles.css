@@ -233,6 +233,7 @@ button, input, textarea:focus {
   display: none;
   color: white;  
   padding: 5% 15%;
+  overflow-y: scroll;
 }
 
 .close-arrow a {
