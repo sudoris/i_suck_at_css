@@ -247,6 +247,21 @@ button, input, textarea:focus {
   cursor: pointer;
 }
 
+.close-x {
+  font-size: 3.2rem;
+  position: fixed; 
+  top: 10%;
+  right: 10%; 
+  display: none;
+}
+
+/* .arrow-to-x {
+  position: fixed; 
+  transition: 0.3s ease-in;
+  top: 10%;
+  right: 10%; 
+} */
+
 .section-title {
   font-size: 6rem;
   text-decoration: underline;  
@@ -421,6 +436,14 @@ button, input, textarea:focus {
 
   .section-content {
     padding: 0;
+  }
+
+  .close-x {
+    display: inline-block;
+  }
+
+  .close-arrow {
+    display: none;
   }
 }
 

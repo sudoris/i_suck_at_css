@@ -36,7 +36,7 @@
       <li class="menu-item"><a href="#contact" onclick="showContact()">contact</a></li>
       <li class="menu-item"><a href="#work" onclick="showWork()">work</a></li>   
     </ul>
-
+    
     <ul class="social">      
       <li class="social-item animated zoomIn"><a href="https://www.linkedin.com/in/david-chen-a5a683162/"><i class="fab fa-linkedin-in"></i></a></li>
       <li class="social-item animated zoomIn"><a href="https://www.facebook.com/david.chen.735"><i class="fab fa-facebook-square"></i></a></li>   
@@ -50,6 +50,7 @@
 
   <div id="about-section" class="section-container">       
     <div onclick="closeAbout()" class="close-arrow"><a href="#"><i class="fas fa-angle-left"></a></i></div>
+    <div onclick="closeAbout()" class="close-x"><a href="#"></a><i class="fas fa-times"></i></div>  
     <h1 class="section-title">about.</h1>            
 
     <h3 class="section-subtitle">about me</h3>
@@ -63,7 +64,8 @@
   </div>
 
   <div id="contact-section" class="section-container">    
-    <div onclick="closeContact()" class="close-arrow"><a href="#"><i class="fas fa-angle-down"></i></a></div> 
+    <div onclick="closeContact()" class="close-arrow"><a href="#"><i class="fas fa-angle-down"></i></a></div>
+    <div onclick="closeContact()" class="close-x"><a href="#"></a><i class="fas fa-times"></i></div>   
     <h1 class="section-title">contact.</h1>
 
     <h3 class="section-subtitle">send me a message (I promise to read it)</h3>
@@ -81,12 +83,17 @@
   </div>
 
   <div id="work-section" class="section-container">    
-    <div onclick="closeWork()" class="close-arrow"><a href="#"><i class="fas fa-angle-right"></i></a></div>        
+    <div onclick="closeWork()" class="close-arrow"><a href="#"><i class="fas fa-angle-right"></i></a></div>   
+    <div onclick="closeWork()" class="close-x"><a href="#"></a><i class="fas fa-times"></i></div>     
     <h1 class="section-title">work.</h1>
 
     <h3 class="section-subtitle">One Record</h3>
     <p class="section-content">This page is still under construction...</p>    
   </div>
+
+  <footer>
+
+  </footer>
   
   <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
   <script src="/__/firebase/6.0.4/firebase-app.js"></script>

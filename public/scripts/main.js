@@ -9,7 +9,7 @@ particlesJS.load('particles-js', 'assets/particles.json', function() {
 function showAbout() {  
   let el = document.getElementById('about-section')
   el.setAttribute('style', 'display: block;')
-  el.classList.add('animated', 'slideInLeft', 'faster')
+  el.classList.add('animated', 'slideInLeft', 'faster')  
   
   setTimeout(function() {
     el.classList.remove('animated', 'slideInLeft', 'faster')        
@@ -19,7 +19,7 @@ function showAbout() {
 // close about section
 function closeAbout() {      
   let el = document.getElementById('about-section')
-  el.classList.add('animated', 'slideOutLeft', 'faster')
+  el.classList.add('animated', 'slideOutLeft', 'faster')     
   
   setTimeout(function() {
     el.classList.remove('animated', 'slideOutLeft', 'faster')
@@ -31,7 +31,7 @@ function closeAbout() {
 function showContact() {
   let el = document.getElementById('contact-section')
   el.setAttribute('style', 'display: block;')
-  el.classList.add('animated', 'slideInUp', 'faster')
+  el.classList.add('animated', 'slideInUp', 'faster')   
   
   setTimeout(function() {
     el.classList.remove('animated', 'slideInUp', 'faster')        
@@ -41,7 +41,7 @@ function showContact() {
 // close contact section
 function closeContact() {  
   let el = document.getElementById('contact-section')
-  el.classList.add('animated', 'slideOutDown', 'faster')
+  el.classList.add('animated', 'slideOutDown', 'faster') 
   
   setTimeout(function() {
     el.classList.remove('animated', 'slideOutDown', 'faster')
@@ -53,7 +53,7 @@ function closeContact() {
 function showWork() {
   let el = document.getElementById('work-section')
   el.setAttribute('style', 'display: block;')
-  el.classList.add('animated', 'slideInRight', 'faster')
+  el.classList.add('animated', 'slideInRight', 'faster')  
   
   setTimeout(function() {
     el.classList.remove('animated', 'slideInRight', 'faster')    
@@ -63,7 +63,7 @@ function showWork() {
 // close work section
 function closeWork() {  
   let el = document.getElementById('work-section')
-  el.classList.add('animated', 'slideOutRight', 'faster')
+  el.classList.add('animated', 'slideOutRight', 'faster')    
   
   setTimeout(function() {
     el.classList.remove('animated', 'slideOutRight', 'faster')
@@ -85,9 +85,11 @@ setTimeout(function() {
   }, 1000)    // animate css's fadeOut animation takes 1s to complete
 }, 1000);   // wait 1s to fadeOut loading 
 
-/***************************** */
+
+/*******************************/
 /* send form data to firestore */
-/***************************** */
+/*******************************/
+
 
 const messagesRef = firebase.firestore().collection('messages')
 
