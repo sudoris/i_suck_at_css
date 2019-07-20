@@ -120,7 +120,7 @@ function submitForm(e) {
     }, 3000)
     
     // clear form
-    document.getElementById('contact_form').reset()
+    document.getElementById('contact-form').reset()
 }
 
 // get form values

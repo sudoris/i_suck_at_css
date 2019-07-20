@@ -111,6 +111,10 @@ button, input, textarea:focus {
   animation-delay: 1.5s;
 }
 
+.footer {    
+  color: #fff;
+}
+
 #title {
   font-size: 7rem;
   margin-bottom: 2rem;
@@ -248,11 +252,15 @@ button, input, textarea:focus {
 }
 
 .close-x {
+  display: none;
   font-size: 3.2rem;
   position: fixed; 
   top: 10%;
-  right: 10%; 
-  display: none;
+  right: 10%;   
+}
+
+.close-x:hover {
+  cursor: pointer;
 }
 
 /* .arrow-to-x {
